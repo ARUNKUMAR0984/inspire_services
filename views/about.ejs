@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - InspireSphere</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"/>
+  
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      
+      background-size: cover;
+      backdrop-filter: blur(10px);
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #6a1b9a;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.92);
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.08);
+    }
+
+    .about-container h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #4a148c;
+    }
+
+    .about-container p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .team-section {
+      margin-top: 40px;
+    }
+
+    .team-section h3 {
+      color: #6a1b9a;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .team-cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .team-member {
+      background: #f3e5f5;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      width: 220px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 3px solid #ba68c8;
+    }
+
+    .team-member h4 {
+      margin: 10px 0 5px;
+      color: #6a1b9a;
+    }
+
+    .team-member p {
+      font-size: 15px;
+      margin: 0;
+    }
+
+    a.back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #6a1b9a;
+      font-weight: bold;
+    }
+
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>About InspireSphere</header>
+
+  <div class="about-container">
+    <h2>Our Mission</h2>
+    <p>
+      At InspireSphere, we believe that every story has the power to heal, to teach, and to uplift. Our platform showcases stories of real people overcoming adversity, chasing dreams, and spreading hope—because the world needs more light and less fear.
+    </p>
+
+    <p>
+      Whether it’s a young dancer redefining courage, a forest planter rebuilding nature, or someone rediscovering purpose through helping others—these are the stories that move the world forward. 🌍💜
+    </p>
+
+    <div class="team-section">
+      <h3>Meet the Team</h3>
+      <div class="team-cards">
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member"/>
+          <h4>Jai Harini</h4>
+          <p>Team Lead</p>
+        </div>
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member"/>
+          <h4>Teammate 1</h4>
+          <p>Frontend Dev</p>
+        </div>
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Team Member"/>
+          <h4>Teammate 2</h4>
+          <p>Content Writer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="Team Member"/>
+          <h4>Teammate 3</h4>
+          <p>Designer</p>
+        </div>
+      </div>
+    </div>
+
+    <a class="back-link" href="/home">&larr; Back to Home</a>
+  </div>
+
+</body>
+</html>
