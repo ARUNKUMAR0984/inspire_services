@@ -2,87 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Us - InspireSphere</title>
+  <title>Contact Us | InspireSphere</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3b81e9ed38.js" crossorigin="anonymous"></script>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #ffe6f0, #f3e5f5);
-      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      backdrop-filter: blur(6px);
-      min-height: 100vh;
+      height: 100vh;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
     }
 
-    .contact-container {
-      max-width: 600px;
-      margin: 60px auto;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      text-align: center;
-      color: #6a1b9a;
-      margin-bottom: 20px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-      font-family: inherit;
-    }
-
-    button {
-      background-color: #8e24aa;
+    .contact-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
       color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    button:hover {
-      background-color: #6a1b9a;
-    }
-
-    footer {
       text-align: center;
-      background: rgba(255,255,255,0.7);
-      padding: 15px;
-      color: #555;
-      font-size: 14px;
+      width: 90%;
+      max-width: 500px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .contact-card h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-shadow: 0 0 10px #ff5eae;
+    }
+
+    .info {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .info i {
+      margin-right: 10px;
+      color: #ffb6f0;
+    }
+
+    .social-links {
+      margin-top: 25px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      font-size: 26px;
+      margin: 0 12px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.3);
+    }
+
+    .instagram { color: #E1306C; }
+    .twitter { color: #1DA1F2; }
+    .whatsapp { color: #25D366; }
+    .linkedin { color: #0A66C2; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 480px) {
+      .contact-card {
+        padding: 30px 20px;
+      }
+
+      .contact-card h2 {
+        font-size: 26px;
+      }
+
+      .info {
+        font-size: 16px;
+      }
+
+      .social-links a {
+        font-size: 22px;
+        margin: 0 8px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="contact-card">
+    <h2><i class="fas fa-paper-plane"></i> Contact Us</h2>
+    <p class="info"><i class="fas fa-envelope"></i> inspiresphere@gmail.com</p>
+    <p class="info"><i class="fas fa-phone"></i> +91 1234567890</p>
+    <p class="info"><i class="fas fa-map-marker-alt"></i> Madurai, India</p>
 
-  <div class="contact-container">
-    <h2>Contact InspireSphere</h2>
-    <form action="https://formsubmit.co/your-jaiharini427@gmail.com" method="POST">
-      <input type="text" name="name" required>
-      <input type="email" name="email" required>
-      <textarea name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>    
+    <div class="social-links">
+      <a href="#" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
   </div>
-
-  <footer>
-    &copy; 2025 InspireSphere. All rights reserved.
-  </footer>
-
 </body>
 </html>
