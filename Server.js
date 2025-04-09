@@ -5,8 +5,8 @@ const path = require('path');
 const app = express();
 
 // ✅ Direct Supabase setup (no .env)
-const supabaseUrl = 'https://kzugdzwhqeoimorvcfus.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt6dWdkendocWVvaW1vcnZjZnVzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMxNjUzNzAsImV4cCI6MjA1ODc0MTM3MH0.MaNDqYkPPs6E5C3W5yO4a_XZTQyC0VN0t_EweeDAkr8';
+const supabaseUrl = 'https://qiialzloktpatomqwwgq.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFpaWFsemxva3RwYXRvbXF3d2dxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQxMjg2MTMsImV4cCI6MjA1OTcwNDYxM30.lNoqmUkCWSlnwhlPaXjQm57L653nKpTq7TCTCziT454';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 app.use(bodyParser.urlencoded({ extended: true }));
